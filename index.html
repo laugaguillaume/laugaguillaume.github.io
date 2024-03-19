@@ -96,6 +96,13 @@
       font-size: 1em;
       text-align: left;
     }
+    /* CSS to center the paragraph */
+    .center {
+        text-align: center;
+    }
+    .small-font {
+            font-size: 6px; /* Adjust the font size as needed */
+    }
   </style>
 </head>
 <body>
@@ -103,6 +110,7 @@
     <h3>Menu</h3>
     <ul>
       <li><a href="#" onclick="window.scrollTo(0, 0)">Home</a></li>
+      <li><a href="#news">News</a></li>
       <li><a href="#publications">Publications</a></li>
       <li><a href="#teaching">Teaching</a></li>
       <li><a href="#curriculum">Curriculum</a></li>
@@ -128,6 +136,14 @@
            of the LIP laboratory and my PhD is funded by <a href="https://www.inria.fr/fr" target="_blank" rel="noopener noreferrer">Inria</a>. <br>
           My work focuses on multilevel optimization methods for proximal based algorithms. <br>
       Contact : <i>guillaume.lauga</i> [@] ens-lyon [DOT] fr, <i>guillaume.lauga</i> [@] inria [DOT] fr.
+    </div>
+    <div class="section">
+      <h2>News</h2>
+      <ul class="center">
+        <li><b>Our paper on IML FISTA has been accepted for publication in SIAM Journal on Imaging Sciences !</b></li>
+        <li><img src="thumbnail_IMLFISTA.png" alt="Reconstructed images with IML FISTA" style="width: 500px;"></li>
+        <li>Reconstructed images with IML FISTA vs FISTA at 2 iterations and after 14h (end) of CPU time</li>
+      </ul>
     </div>
     <div class="section" id="publications">
       <h2>Publications</h2>
