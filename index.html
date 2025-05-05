@@ -1,255 +1,158 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Guillaume Lauga</title>
-  <style>
-    .container {
-      /*
-      overflow: scroll; */ /* add a scroll bar to the container */
-      background-color: beige;
-      font-family: "Lucida Console", monospace;
-      border-left: 1px solid grey;
-      padding: 0 0px 0;
-    }
-    body {
-      width: 100%;
-      background-color: beige;
-      font-family: "Lucida Console", monospace;
-      overflow-x: hidden;
-      /* border-left: 1px solid grey; */
-      padding: 0 15px ;
-    }
-    .title {
-      font-size: 2em;
-    }
-    .main {
-      margin: 0 -20px;
-      background-color: beige;
-      width: 100%;
-    }
-    .main h1 {
-      color: rgb(128, 128, 0);
-      border-bottom: 1px double brown;
-    }
-    .section {
-      margin: 20px 0;
-    }
-    .section h2 {
-      color: rgb(128, 128, 0);
-      font-size: 1.5em;
-      margin: 10px 0;
-      border-bottom: 1px solid brown;
-    }
-    .section p {
-      font-size: 1.2em;
-      line-height: 1.5;
-    }
-    .section ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-    .section li {
-      margin: 10px 0;
-    }
-    .section a {
-      color: brown;
-      text-decoration: none;
-    }
-    .presentation {
-      align-items: center;
-    }
-    .presentation a {
-      color: brown;
-      text-decoration: none;
-    }
-    .presentation img {
-      margin-right: 30px;
-    }
-    .presentation p {
-      font-size: 1em;
-      text-align: left;
-    }
-    /* CSS to center the paragraph */
-    .center {
-        text-align: center;
-    }
-    .small-font {
-            font-size: 6px; /* Adjust the font size as needed */
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-  <main class="main">
-    <div id="toptitle">
-      <h1>Guillaume Lauga</h1>
-    </div>
-    <div class="presentation" style="display: flex;">
-      <!-- <img src="DSC02602.JPG" alt="My Photo" style="width: 150px;"> -->
-      <img src="20241220171744908293.jpg" alt="" style="height: 220px;">
-      <p>I obtained my PhD at École Normale Supérieure de Lyon in December 2024 under the supervision of
-          <a href="http://perso.ens-lyon.fr/paulo.goncalves/" target="_blank" rel="noopener noreferrer">Paulo Gonçalves</a>,
-          <a href="https://perso.ens-lyon.fr/elisa.riccietti/" target="_blank" rel="noopener noreferrer" >Elisa Riccietti</a>  and
-          <a href="http://perso.ens-lyon.fr/nelly.pustelnik/" target="_blank" rel="noopener noreferrer">Nelly Pustelnik</a>. 
-          I was a member of the <a href="https://team.inria.fr/ockham/" target="_blank" rel="noopener noreferrer">Inria OCKHAM team</a>
-           of the LIP laboratory, funded by <a href="https://www.inria.fr/fr" target="_blank" rel="noopener noreferrer">Inria</a>. <br>
-          During my PhD my work focused on multilevel optimization methods for proximal based algorithms, with applications to image restoration problems. Adjacently, I am interested in everything related to deep learning methods. <br>  <br>
-      Contact : <i>guillaume.lauga</i> [@] ens-lyon [DOT] fr, <i>guillaume.lauga</i> [@] inria [DOT] fr. Tel: (+33)684021194. <br>
-      <!-- I also have a small <a href="blog.html">blog</a> where I post random stuff. -->
-    </div>
-    <div class="section">
-      <h2>News</h2>
-      <ul>
-        <li>(December 17, 2024) I successfully defended my thesis! Thanks a lot to Aude Rondepierre, Bruno Torresani, Jean-Christophe Pesquet, Panos Parpas and Ivan Selesnick for accepting to be part of the jury! </li>
-        <li> 
-          <img src="P1050306.JPG" alt="" style="width: 150px;"> <img src="P1050304.JPG" alt="" style="height: 220px;"> 
-        </li>
-        <!-- <li>(March 14, 2024) Our paper on IML FISTA has been accepted for publication in SIAM Journal on Imaging Sciences: </li>
-        <li><img src="thumbnail_IMLFISTA.png" alt="Reconstructed images with IML FISTA" style="width: 500px;"></li>
-        <li>Reconstructed hyperspectral image (<a href="https://personalpages.manchester.ac.uk/staff/d.h.foster/Hyperspectral_Images_of_Illustrated_Manuscripts.html" target="_blank" rel="noopener noreferrer">source</a>) with IML FISTA vs FISTA after 20 min (2 iterations) and after 3h (end) of CPU time</li> -->
-      </ul>
-    </div>
-    <div class="section" id="publications">
-      <h2>Publications</h2>
-      <ul>
-        <li>
-          <a href="https://inria.hal.science/hal-04509285" target="_blank" rel = "noopener noreferrer">
-            A multilevel framework for accelerating uSARA in radio-interferometric imaging 
-          </a>
-          <br>
-          <strong>G. Lauga</strong>, A. Repetti, E. Riccietti, N. Pustelnik, P. Gonçalves, Y. Wiaux.
-          <br>
-          EUSIPCO, Lyon, 2024.
-        </li>
-        <li>
-          <a href="https://inria.hal.science/hal-04075814" target="_blank" rel = "noopener noreferrer">
-            IML FISTA: A Multilevel Framework for Inexact and Inertial Forward-Backward. Application to Image Restoration
-          </a>
-          <br>
-          <strong>G. Lauga</strong>, E. Riccietti, N. Pustelnik, P. Gonçalves.
-          <br>
-          SIAM Journal on Imaging Sciences 17 (3), 1347-1376, 2024. [<a href="https://github.com/laugaguillaume/IML_FISTA_image_restoration" target="_blank" rel = "noopener noreferrer">CODE</a>]
-        </li>
-        <li>
-          <a href="https://hal.inria.fr/hal-04067225" target="_blank" rel="noopener noreferrer">
-            Méthodes multi-niveaux pour la restauration d'images hyperspectrales</a>
-          <br>
-          <strong>G. Lauga</strong>, E. Riccietti, N. Pustelnik, P. Gonçalves.
-          <br>
-          Colloque GRETSI, September 2023.
-        </li>
-        <li>
-          <a href="https://hal.science/hal-04062317" target="_blank" rel="noopener noreferrer">
-            Sparsity in neural networks can improve their privacy</a>
-          <br>
-          A. Gonon, L. Zheng, C. Lalanne, Q.-T. Le, <strong>G. Lauga</strong>, C. Pouliquen.
-          <br>
-          Colloque GRETSI, September 2023.
-        </li>
-        <li>
-          <a href="https://hal.archives-ouvertes.fr/hal-03831180" target="_blank" rel="noopener noreferrer">
-            Multilevel FISTA for Image Restoration</a>
-          <br>
-          <strong>G. Lauga</strong>, E. Riccietti, N. Pustelnik, P. Gonçalves.
-          <br>
-          ICASSP, June 2023.
-        </li>
-        <li>
-          <a href="https://hal.inria.fr/hal-03739496/" target="_blank" rel="noopener noreferrer">
-            Méthodes proximales multi-niveaux pour la restauration d'images</a>
-          <br>
-          <strong>G. Lauga</strong>, E. Riccietti, N. Pustelnik, P. Gonçalves.
-          <br>
-          Colloque GRETSI, September 2022.
-        </li>
-      </ul>
-    </div>
-    <div class="section">
-      <h2>Talks</h2>
-      <ul>
-        <li>
-          Multilevel Proximal Methods for Image Restoration: Application to Radio-interferometric Imaging, EURO, Copenhagen, June 30-July 3 2024
-        </li>
-        <li>
-          Multilevel Proximal Methods for Image Restoration, RICAM Seminar, Johannes Kepler Institute, Linz, June 24, 2024
-        </li>
-        <li>
-          Multilevel Proximal Methods for Image Restoration: Application to Radio-interferometric Imaging, SIAM Linear Algebra, Paris, May 13-17, 2024
-        </li>
-        <li>
-          Multilevel Proximal Methods for Image Restoration, Séminaire Contrôle et Optimisation, Insa Rouen, April 23, 2024
-        </li>
-        <li>
-          Multilevel Proximal Methods for Image Restoration, Seminar at Heriot-Watt University, Edinburgh, April 15, 2024
-        </li>
-        <li>
-          Multilevel Proximal Methods for Image Restoration: Application to Radio-Interferometry, SMAI MODE, Lyon, March 26-29, 2024
-        </li>
-        <li> 
-          Multilevel Proximal Methods for Image Restoration, Workshop on Optimization, Berlin, June 14-16, 2023  
-        </li>
-        <li>
-          Multilevel Proximal Methods for Image Restoration, Optimization and Control in Burgundy, May 9-11, 2023 [<a href="https://hal.science/hal-04105509" target="_blank" rel = "noopener noreferrer">SLIDES</a>]  
-        </li>
-        <li>
-          Multilevel Proximal Methods for Image Restoration, Séminaire Images Optimisation et Probabilités, Institut de Mathématiques de Bordeaux, May 4, 2023  
-        </li>
-        <li>
-          Multilevel Proximal Methods for Image Restoration, SIAM CSE 2023 [<a href="Slides_CSE_1_mars_2023.pdf" target="_blank" rel="noopener noreferrer" download="slides_CSE_Lauga">SLIDES</a>] 
-        </li>
-      </ul>
-    </div>
-    <div class="section" id="teaching">
-      <h2>Teaching</h2>
-      <p>
-        2023-2024:
-      <p>
-      Teaching assistant at École Normale Supérieure de Lyon:
-      <ul>
-        <li><strong>Fundamentals of Machine Learning</strong> M1, 10h of tutorials.</li>
-        <li><strong>Optimization</strong> M1, 28h of tutorials.</li>
-      </ul>
-      <p>
-        2022-2023:
-      <p>
-      Teaching assistant at École Centrale de Lyon:
-      <ul>
-        <li><strong>Analyse appliquée,</strong> (Optimization and measure theory) 1st year of engineering school, 40h of tutorials.</li>
-      </ul>
-      <p>
-        2021-2022:
-      <p>
-      Teaching assistant at Université Claude Bernard Lyon 1:
-      <ul>
-        <li><strong>Fondamentaux des Mathématiques 1,</strong> Bachelor of Informatics and Mathematics (1st year), 45h of tutorials.</li>
-        <li><strong>Fondamentaux des Mathématiques 2,</strong> Bachelor of Informatics and Mathematics (1st year), 19h of oral examinations.</li>
-      </ul>
-    </div>
-    <div class="section" id="curriculum">
-      <h2>Curriculum</h2>
-      <p>
-        <b>Education:</b>
-      </p>
-      <ul>
-        <li>PhD in Optimization, ENS de Lyon, 2021-2024</li>
-        <li>Engineering School (Applied Mathematics), École Centrale de Lyon, 2017-2021</li>
-        <li>M.Sc. in Applied Mathematics, ECL, Université Lyon 1 and ENS Lyon, 2020-2021</li>
-        <li>B.Sc. in General Mathematics, Université Lyon 1, 2018-2019</li>
-      </ul>
-      <!--
-      <p>
-        <b>Professional Experience:</b>
-      </p>
-      <ul>
-        <li>Position, Institution Name, Year-Year</li>
-        <li>Position, Institution Name, Year-Year</li>
-      </ul>
-      -->
-    </div>
-  </main>
-  </div>
-</body>
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
+    <title>Guillaume Lauga</title>
 
+    <meta name="author" content="Guillaume Lauga">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    
+  </head>
+
+  <body>
+    <table style="width:100%;max-width:900px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr style="padding:0px">
+              <td style="padding:2.5%;width:63%;vertical-align:middle">
+                <p class="name" style="text-align: center;">
+                  Guillaume Lauga
+                </p>
+                <p>I'm a postdoctoral researcher at <a href="https://deepmind.google/">ENS Lyon</a>, where I defended my <a href="https://hal.science/tel-04906328">thesis</a> in December 2024, supervised by <a href="http://perso.ens-lyon.fr/paulo.goncalves/" target="_blank" rel="noopener noreferrer">Paulo Gonçalves</a>,
+                  <a href="https://perso.ens-lyon.fr/elisa.riccietti/" target="_blank" rel="noopener noreferrer" >Elisa Riccietti</a>  and
+                  <a href="http://perso.ens-lyon.fr/nelly.pustelnik/" target="_blank" rel="noopener noreferrer">Nelly Pustelnik</a>. 
+                  I was a member of the <a href="https://team.inria.fr/ockham/" target="_blank" rel="noopener noreferrer">Inria OCKHAM team</a>. Starting from July 2025, I will be at <a href="">Université Côte d'Azur</a> with <a href="https://samuelvaiter.com">Samuel Vaiter</a>.
+                </p>
+                <p>
+                  During my PhD, I worked on multilevel optimization methods for proximal based algorithms, with applications to image restoration problems.
+                </p>
+                <p style="text-align:center">
+                  <a href="mailto:guillaume.lauga@ens-lyon.fr">Email</a> &nbsp;/&nbsp;
+                  <a href="data/CV_Guillaume__23042025.pdf">CV</a> &nbsp;/&nbsp;
+                  <a href="https://scholar.google.com/citations?user=kp4hEB0AAAAJ&hl=en">Scholar</a> &nbsp;/&nbsp;
+                  <a href="https://github.com/laugaguillaume/">Github</a>
+                </p>
+              </td>
+              <td style="padding:2.5%;width:50%;max-width:50%">
+                <a href="images/PhDdefense17122024_1.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/PhDdefense17122024_1.jpg" class="hoverZoomLink"></a>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr>
+              <td style="padding:16px;width:100%;vertical-align:middle">
+                <h2>Research</h2>
+                <p>
+                  I'm interested in optimization for imaging applications. Since the start of my PhD I investigate the convergence of proximal algorithms tailored for large-scale problems. Such algorithms can take the form of multilevel algorithms but also block-coordinate descent algorithms, which are often used in imaging applications. I also try to apply these algorithms to as many challenging imaging problems I can.
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+    <tr  bgcolor="#ffffd0">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <img src='images/IMLFISTA.001.png' width=100%>
+        </div>
+
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="https://epubs.siam.org/doi/abs/10.1137/23M1582345">
+			<span class="papertitle">IML FISTA: A Multilevel Framework for Inexact and Inertial Forward-Backward. Application to Image Restoration
+</span>
+        </a>
+        <br>
+				<strong>Guillaume Lauga</strong>,
+        Elisa Riccietti,
+        Nelly Pustelnik,
+        Paulo Gonçalves
+        <br>
+        <em>SIAM Journal on Imaging Sciences</em>, 2024 
+        <br>
+        <a href="https://github.com/laugaguillaume/IML_FISTA_image_restoration">Matlab code</a>
+        /
+        <a href="https://arxiv.org/abs/2304.13329">arXiv</a> 
+        /
+        <a href="https://inria.hal.science/hal-04075814 ">HAL</a>
+        <p></p>
+        <p>
+				IML FISTA: An Inexact Multilevel FISTA. Optimal convergence guarantees on non-smooth convex optimization problems and ability to handle inexact computation of the proximity operator. Some applications to restoration of color and hyperspectral images.
+        </p>
+      </td>
+    </tr>
+
+    <tr>
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <img src='images/IMLFISTAforRI.001.png' width=100%>
+        </div>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="https://ieeexplore.ieee.org/abstract/document/10715263">
+          <span class="papertitle">A multilevel framework for accelerating uSARA in radio-interferometric imaging
+          </span>
+        </a>
+        <br>
+				<strong>Guillaume Lauga</strong>, 
+        <a href="https://sites.google.com/view/audreyrepetti">Audrey Repetti</a>,
+        Elisa Riccietti,
+        Nelly Pustelnik,
+        Paulo Gonçalves,
+        <a href="https://basp.site.hw.ac.uk/prof-yves-wiaux/">Yves Wiaux</a>
+        <br>
+        <em>EUSIPCO</em>, 2024 &nbsp <font color=#FF8080><strong>(Poster)</strong></font>
+        <br>
+        <a href="https://basp-group.github.io/BASPLib/index.html">BASP Group project page</a>
+        /
+        <a href="https://arxiv.org/abs/2403.13385">arXiv</a>
+        /
+        <a href="https://inria.hal.science/hal-04509285">HAL</a>
+        <p></p>
+        <p>
+				Application of IML FISTA to solve radio-interferometric imaging problems. Hierarchy of approximations built in the observation space rather than in the parameter space.
+        </p>
+      </td>
+    </tr>
+            
+          <!-- </tbody></table>
+          <table style="width:100%; margin:0 auto; border:0; border-spacing:0; padding:16px;"><tbody>
+            <tr>
+              <td>
+                <h2>Miscellanea</h2>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            
+           
+            <tr>
+              <td align="center" style="padding:16px;width:20%;vertical-align:middle">
+						     <div class="colored-box" style="background-color: #fcb97d;">
+								 <h2>Random thoughts</h2>
+								 </div>
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                
+              </td>
+            </tr>
+          </tbody></table> -->
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:0px">
+                <br>
+                <p style="text-align:right;font-size:small;">
+                  Website source code from <a href="https://github.com/jonbarron/jonbarron_website">here</a>. 
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+        </td>
+      </tr>
+    </table>
+  </body>
 </html>
