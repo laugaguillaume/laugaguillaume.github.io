@@ -160,3 +160,9 @@ span.highlight {
   background-color: #e0e0e0; /* Slightly darker on hover */
   text-decoration: none;
 }
+
+.center-img {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+}
